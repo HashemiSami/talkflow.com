@@ -1,0 +1,324 @@
+<!-- courses.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Courses - Talkflow Academy</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .course-category {
+      margin-bottom: 3rem;
+    }
+
+    .course-category h2 {
+      font-size: 2rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    /* Course Cards Layout */
+    .courses-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .course-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .course-card h3 {
+      font-size: 1.6rem;
+      margin: 1rem 0;
+    }
+
+    .course-card p {
+      font-size: 1rem;
+      padding: 0 1rem;
+      color: #555;
+    }
+
+    .course-card .course-info {
+      padding: 1rem;
+    }
+
+    .course-card .enroll-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .course-card .enroll-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #333;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .testimonial-item {
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Talkflow Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="courses.html">Our Courses</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <main>
+    <section>
+      <h1>Our Courses</h1>
+      <p>At Talkflow Academy, we offer diverse courses in language learning and Islamic studies. Browse through the categories below to learn more.</p>
+
+     <!-- English Courses Section -->
+<div class="course-category">
+    <h2>English Language Courses</h2>
+    <div class="courses-container">
+      <div class="course-card">
+        <img src="assets/beginner_english.jpg" alt="Beginner English">
+        <div class="course-info">
+          <h3>Beginner English</h3>
+          <p>Duration: 8 weeks | Instructor: John Doe</p>
+          <p>Learn the basics of English, including vocabulary, grammar, and speaking skills.</p>
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARjI3jBUMEJHWVhTS0JIWlgyR1RYMFlTQ1ozN1YxNS4u" target="_blank">
+            <button class="enroll-btn">Enroll Now</button>
+          </a>
+        </div>
+      </div>
+      <div class="course-card">
+        <img src="assets/english-intermediate.jpg" alt="Intermediate English">
+        <div class="course-info">
+          <h3>Intermediate English</h3>
+          <p>Duration: 10 weeks | Instructor: Jane Smith</p>
+          <p>Enhance your speaking, writing, and listening abilities in English.</p>
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SomeOtherFormID" target="_blank">
+            <button class="enroll-btn">Enroll Now</button>
+          </a>
+        </div>
+      </div>
+      <div class="course-card">
+        <img src="assets/english-advanced.jpg" alt="Advanced English">
+        <div class="course-info">
+          <h3>Advanced English</h3>
+          <p>Duration: 12 weeks | Instructor: Mary Johnson</p>
+          <p>Master advanced English grammar, fluency, and professional communication.</p>
+          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SomeOtherFormID" target="_blank">
+            <button class="enroll-btn">Enroll Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- German Courses Section -->
+      <div class="course-category">
+        <h2>German Language Courses</h2>
+        <div class="courses-container">
+          <div class="course-card">
+            <img src="assets/german-beginner.jpg" alt="Beginner German">
+            <div class="course-info">
+              <h3>Beginner German</h3>
+              <p>Duration: 8 weeks | Instructor: Max Mueller</p>
+              <p>Start learning German with basic vocabulary, phrases, and essential grammar.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/german-intermediate.jpg" alt="Intermediate German">
+            <div class="course-info">
+              <h3>Intermediate German</h3>
+              <p>Duration: 10 weeks | Instructor: Anna Schmidt</p>
+              <p>Focus on more complex sentences and real-life German conversation.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/german-advanced.jpg" alt="Advanced German">
+            <div class="course-info">
+              <h3>Advanced German</h3>
+              <p>Duration: 12 weeks | Instructor: Klaus Weber</p>
+              <p>Perfect your speaking, writing, and listening skills for fluency in German.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arabic Courses Section -->
+      <div class="course-category">
+        <h2>Arabic Language Courses</h2>
+        <div class="courses-container">
+          <div class="course-card">
+            <img src="assets/arabic-beginner.jpg" alt="Beginner Arabic">
+            <div class="course-info">
+              <h3>Beginner Arabic</h3>
+              <p>Duration: 8 weeks | Instructor: Ahmed Khalid</p>
+              <p>Learn the Arabic alphabet, basic vocabulary, and simple sentences.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/arabic-intermediate.jpg" alt="Intermediate Arabic">
+            <div class="course-info">
+              <h3>Intermediate Arabic</h3>
+              <p>Duration: 10 weeks | Instructor: Fatima Al-Farsi</p>
+              <p>Expand your vocabulary and learn to engage in more advanced conversations.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/arabic-advanced.jpg" alt="Advanced Arabic">
+            <div class="course-info">
+              <h3>Advanced Arabic</h3>
+              <p>Duration: 12 weeks | Instructor: Ali Hadi</p>
+              <p>Master advanced grammar and writing techniques in both classical and modern Arabic.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Islamic Studies Section -->
+      <div class="course-category">
+        <h2>Islamic Studies</h2>
+        <div class="courses-container">
+          <div class="course-card">
+            <img src="assets/quran-recitation.jpg" alt="Quran Recitation">
+            <div class="course-info">
+              <h3>Quran Recitation</h3>
+              <p>Duration: 10 weeks | Instructor: Sheikh Ali</p>
+              <p>Learn the correct pronunciation and rhythm of Quranic recitation.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/tafseer.jpg" alt="Tafseer">
+            <div class="course-info">
+              <h3>Tafseer</h3>
+              <p>Duration: 12 weeks | Instructor: Sheikh Zayed</p>
+              <p>Understand the interpretations and meanings of Quranic verses.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+          <div class="course-card">
+            <img src="assets/tajweed.jpg" alt="Tajweed">
+            <div class="course-info">
+              <h3>Tajweed</h3>
+              <p>Duration: 8 weeks | Instructor: Sheikh Omar</p>
+              <p>Learn the rules of proper pronunciation and intonation when reciting the Quran.</p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial-item">
+        <p>"The English courses at Talkflow Academy helped me improve my speaking and writing skills dramatically. The instructors are very experienced and friendly!"</p>
+        <p>- Sarah K.</p>
+      </div>
+      <div class="testimonial-item">
+        <p>"I loved the Arabic course! It was challenging but rewarding, and now I can read and understand the Quran in Arabic."</p>
+        <p>- Ahmed S.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Talkflow Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
